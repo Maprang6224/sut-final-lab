@@ -6,7 +6,7 @@ import (
 
 type Customer struct {
 	gorm.Model
-	Name       string
+	Name       string `valid:"required~กรุณากรอกชื่อ"`
 	Email      string
 	CustomerID string
 }
